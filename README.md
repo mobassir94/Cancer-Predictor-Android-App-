@@ -16,50 +16,7 @@ Using Weka API This System Is developed for early detecting ovarian cancer and c
 
 Below is the table which was generated from the dataset that shows each and every features percentage/distribution of developing ovarian cancer (yes/no)
  
-
-
-                                   Affected by ovarian Cancer?
-
-                                         yes	         no
-Menarche start early?
-	early	                               84(64.122%	   47(35.877%)
-	normal	                             2(1.62%)	   121(98.37%)
-	late	                               181(67.79%)	  86(32.209%)
-Oral Contraception?
-	yes	                                 72(92.30%)	    6(7.69%)
-	no	                                 195(44.01%)	  248(55.98%)
-Diet Maintaining?
-	yes	                                 14(10%)	      126(90%)
-	no	                                 253(66.40%)	  128(33.59%)
-Affected By Breast Cancer?
-	yes	                                 250(70.42%)  	105(29.57%)
-	no	                                 17(10.24%)	    149(89.75%)
-Affected By cervical Cancer?
-	yes	                                 258(68.98%)	  116(31.01%)
-	no	                                 9(6.122%)	    138(93.87%)
-Cancer History In family?
-	yes	                                 241(68.85%)	  109(31.14%)
-	no	                                 26(15.20%)    	145(84.79%)
-Education?
-	illitarate	                         172(66.40%)  	87(33.59%)
-	primary level	                       90(37.65%)	    149(62.34%)
-	graduated	                           5(21.73%)	    18(78.26%)
-Age of Husband?
-	below 30	                           7(58.33%)	    5(41.66%)
-	31-45	                               5(9.09%)	      50(90.90%)
-	46-60	                               243(55.86%)	  192(44.13%)
-	above 60	                           12(63.15%)	    7(36.84%)
-Menopause End age?
-	before 40	                           70(47.29%)	    78(52.70%)
-	40-51	                               48(28.91%)	    118(71.08%)
-	after 52	                           149(71.98%)	  58(28.01%)
-Food contains high fat?
-	yes	                                 97(87.38%)	    14(12.61%)
-	no	                                 170(41.46%)	  240(58.53%)
-Abortion?
-	yes	                                 219(85.21%)	  38(14.78%)
-	no	                                 48(18.18%)	    216(81.81%)
-  
+click here : https://github.com/mobassir94/Cancer-Predictor-Android-App-/blob/master/risk%20score.JPG
 
 
 From the above table manual rating was given to each sub feature based on their impact on developing ovarian cancer.
