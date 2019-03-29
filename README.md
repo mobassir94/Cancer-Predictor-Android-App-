@@ -3,7 +3,9 @@ Using Weka API This System Is developed for early detecting ovarian cancer and c
 
 # Ovarian Cancer Predictor:
 
-521 cancer and non-cancer patients record was collected from different diagnostic centers (in Bangladesh). Then a structured questionnaire was used containing details of ovarian cancer risk factors including age, menopause end age, problem during pregnancy, first sex age, any infection in genital area, affected by ovarian cancer, abortion, pregnancy, BMI, menopause after 50, food habit, obesity, excessive alcohol, late menopause, early menopause, hormone therapy, exercise, previous exposure to other sexually transmitted infections (STIs), marital status, genetic risk, outdoor activities and affected by any cancer before based on the previous studies. After pre-processing, data was clustered using K-means clustering algorithm for identifying relevant and non-relevant data to ovarian cancer. Then relevant data were used to develop this system, there are 6 algorithms applied in the relevant data, which are:
+521 cancer and non-cancer patients record was collected from different diagnostic centers (in Bangladesh). Then a structured questionnaire was used containing details of ovarian cancer risk factors including age, menopause end age, problem during pregnancy, first sex age, any infection in genital area, affected by ovarian cancer, abortion, pregnancy, BMI, menopause after 50, food habit, obesity, excessive alcohol, late menopause, early menopause, hormone therapy, exercise, previous exposure to other sexually transmitted infections (STIs), marital status, genetic risk, outdoor activities and affected by any cancer before based on the previous studies. After pre-processing, data was clustered using K-means clustering algorithm for identifying relevant and non-relevant data to ovarian cancer. Then relevant data were used to develop this system, there are 6 algorithms applied in the relevant data and on 70-30% training and testing split the performance of the models was evaluated.
+
+# performance of Eatch Algorithm:
 
 1. Decision Tree (J48):  accuracy = 80.2548 %
 2. Random Forest:  accuracy = 80.2548 %
@@ -73,8 +75,7 @@ The system checks if 3 or more algorithms/classifier returns positive prediction
 
 the Dataset was collected from UCI machine learning repository, i've applied Boruta (Feature selection in R) to get the relevant and Most Important Features for detecting BIOPSY.
 
-then only 1 algorithm used for predicting cervical cancer which is Random Forest, and on a 70-30% training and testing split and using 10 fold cross validation the accuracy of this algorithm on this system was 89.5349 % that means almost 90% time what this system predicts for ‘biopsy’ is correct (based on previous patients symptoms)
-
+then only 1 algorithm used for predicting cervical cancer which is Random Forest, and on a 70-30% training and testing split and using 10 fold cross validation the accuracy of this algorithm for predicting BIOPSY was 89.5349 % 
 
 
 
