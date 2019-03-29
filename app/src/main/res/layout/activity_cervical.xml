@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:label="Cervical Cancer Detector"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/colorPrimaryDark"
+tools:context=".cervicalcancer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_default"
+
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+
+            android:text="Please Answer the Questions Below(NOTE : Age field is Mandatory but if you don't want to answer any other question then select either blank or input 99)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        //text fields
+
+        <EditText
+            android:id="@id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:hint="Enter your age? (Range : 13-84)" />
+
+
+        <EditText
+            android:id="@id/sexpartners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:hint="Number of sexual partners (Range : 1 - 28)" />
+
+        <EditText
+            android:id="@id/smokes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+
+            android:hint="Smokes (years)? (Range : 0-37)"
+            android:inputType="" />
+
+
+        <EditText
+            android:id="@id/smokespack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:hint="Smokes (packs/year)? (Range : 0-37)" />
+
+
+        <EditText
+            android:id="@id/hormonalyears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:hint="Hormonal Contraceptives (years)? (Range: 0-30)" />
+
+
+        <EditText
+            android:id="@id/iudyears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:hint="IUD (years)? (Range : 0-19)"
+            android:inputType="" />
+
+
+        <EditText
+            android:id="@id/stdsnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:hint="stds number (Range : 0-4)" />
+
+
+        //Radio Buttons
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hormonal Contraceptives"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/hormon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+
+            <RadioButton
+                android:id="@+id/hormon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/hormonwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/iudwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intrauterine Device (IUD)"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/iud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/iud1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexually Transmitted Diseases (STDS)"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/stdss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stds1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdswhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:Condylomatosis"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/stdscond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdscond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdscondwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:Cervical Condylomatosis"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/stdscervcond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdscervcond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdscervxcondwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:vulvo-perineal Condylomatosis"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/stdsvulv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdsvulv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdsvulvwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:syphilis"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/stdssyphilis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdssyphilis1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/stdssyphiliswhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:AIDS"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/aids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/aids1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/aidswhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:Hepatitis-B"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/hepatisisb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/hepatitisb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/hepatitisbwhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blank"
+                android:textColor="@android:color/holo_blue_light" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:Number of Diagnosis"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/numofdx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="zero"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/numofdx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/numofdx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/numofdx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="three"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" STDs:Cancer (Stds caused cancer?)"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/cancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/cancer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:CIN(Cervical Intraepithelial Neoplasia)"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/cin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/cin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radiocervix12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:HPV"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/hpv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/hpv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiocervix13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DX(Diagnosis?)"
+
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:id="@+id/dx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="yes"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <RadioButton
+                android:id="@+id/dx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="@android:color/holo_blue_light" />
+
+
+        </RadioGroup>
+
+
+        //button
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/predict_biopsy" />
+
+
+    </LinearLayout>
+
+</ScrollView>

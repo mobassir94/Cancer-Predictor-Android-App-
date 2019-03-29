@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "238136730588",
+    "firebase_url": "https://cancerpredictor.firebaseio.com",
+    "project_id": "cancerpredictor",
+    "storage_bucket": "cancerpredictor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238136730588:android:71bb4d91e2feb835",
+        "android_client_info": {
+          "package_name": "com.example.cancerpredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238136730588-oroo4jk24n5n78712f3v57esp0ajsdrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuLAOQbBJweTluuf_GghG3Ut1iAGvdKY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

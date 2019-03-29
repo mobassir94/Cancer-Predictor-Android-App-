@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_google_signin_btn_text_light_pressed">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ovariancancer"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Answer Questions (by selecting BLUE cells option) below:"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorLink="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.178" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/menarche_start_early"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:entries="@array/menarche">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/oral_contraception"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/oral"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/diet_maintaining"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/diet"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/affected_by_breast_cancer"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/breastcancer"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/affected_by_cervical_cancer"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/cervical"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/cancer_history_in_family"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/cancerinfamily"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/choose_education"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/education"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/age_of_husband"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/husbandsage"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/menopause_end_age"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/menopause"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/food_contains_high_fat"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/foodfat"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:gravity="center"
+            android:text="@string/choose_abortion"
+            android:textColor="@android:color/holo_red_light" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:entries="@array/abortion"></android.support.v7.widget.AppCompatSpinner>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Predict" />
+
+
+    </LinearLayout>
+
+</ScrollView>

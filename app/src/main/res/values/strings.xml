@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">cervicalCancer</string>
+    <string name="predict_biopsy">Predict Biopsy</string>
+    <string name="hormon1">no</string>
+
+    <string name="hormon">yes</string>
+
+    <string name="iud">yes</string>
+    <string name="iud1">yes</string>
+
+    <string name="stdss">yes</string>
+
+    <string name="stds1">no</string>
+
+    <string name="stdscond">yes</string>
+
+    <string name="stdscond11">no</string>
+
+    <string name="stdscervcond">yes</string>
+
+    <string name="stdscervcond1">no</string>
+
+    <string name="stdsvulv">yes</string>
+
+    <string name="stdsvulv1">no</string>
+
+
+    <string name="stdssyphilis">yes</string>
+
+    <string name="stdssyphilis1">no</string>
+
+    <string name="aids">yes</string>
+
+    <string name="aids1">no</string>
+
+    <string name="hepatisisb">yes</string>
+
+    <string name="hepatisisb1">no</string>
+
+    <string name="numofdx">zero</string>
+
+    <string name="numofdx1">one</string>
+
+    <string name="numofdx2">two</string>
+
+    <string name="numofdx3">three</string>
+
+    <string name="cancer">yes</string>
+
+    <string name="cancer1">no</string>
+
+
+    <string name="hormonwhat">blank</string>
+
+    <string name="iudwhat">blank</string>
+
+    <string name="stdscondwhat">blank</string>
+
+    <string name="stdswhat">blank</string>
+    <string name="stdscervcondwhat">blank</string>
+
+    <string name="stdsvulvwhat">blank</string>
+
+
+    <string name="stdssyphiliswhat">blank</string>
+
+
+    <string name="aidswhat">blank</string>
+
+    <string name="hepatisisbwhat">blank</string>
+
+
+    <item name="age" type="id"></item>
+    <item name="sexpartners" type="id"></item>
+    <item name="smokes" type="id"></item>
+    <item name="smokespack" type="id"></item>
+    <item name="hormonalyears" type="id"></item>
+    <item name="iudyears" type="id"></item>
+    <item name="stdsnumber" type="id"></item>
+
+
+    <string name="submit">Submit</string>
+    <string name="menarche_start_early">Menarche start early?</string>
+    <string name="oral_contraception">Oral Contraception?</string>
+    <string name="diet_maintaining">Diet Maintaining?</string>
+    <string name="affected_by_breast_cancer">Affected By Breast Cancer?</string>
+    <string name="affected_by_cervical_cancer">Affected By cervical Cancer?</string>
+    <string name="cancer_history_in_family">Cancer History In family?</string>
+    <string name="education">Education?</string>
+    <string name="age_of_husband">Age of Husband?</string>
+    <string name="menopause_end_age">Menopause End age?</string>
+    <string name="food_contains_high_fat">Food contains high fat?</string>
+    <string name="abortion">Abortion?</string>
+
+
+    <string name="menarche">Menarche starts?</string>
+
+    <string-array name="menarche">
+        <item>early</item>
+        <item>late</item>
+        <item>normal</item>
+    </string-array>
+
+    <string name="oral">oral contraceptive?</string>
+
+    <string-array name="oral">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="diet">Do you maintain diet?</string>
+
+    <string-array name="diet">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+
+    <string name="breastcancer">Do you have breast cancer?</string>
+    <string-array name="breastcancer">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="cervical">Affected by cervical cancer?</string>
+    <string-array name="cervical">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="cancerinfamily">Cancer history in family?</string>
+    <string-array name="cancerinfamily">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="choose_education">Your Education level?</string>
+    <string-array name="education">
+        <item>primary level</item>
+        <item>illitarate</item>
+        <item>graduated</item>
+    </string-array>
+
+
+    <string name="husbandsage">Your husbands age?</string>
+    <string-array name="husbandsage">
+        <item>46-60</item>
+        <item>31-45</item>
+        <item>above 60</item>
+        <item>below 30</item>
+    </string-array>
+
+
+    <string name="menopause">Menopause end age?</string>
+    <string-array name="menopause">
+        <item>40-51</item>
+        <item>before 40</item>
+        <item>after 52</item>
+
+    </string-array>
+
+    <string name="foodfat">Food contains high fat?</string>
+    <string-array name="foodfat">
+        <item>yes</item>
+        <item>no</item>
+
+    </string-array>
+
+    <string name="choose_abortion">Abortion?</string>
+
+    <string-array name="abortion">
+        <item>yes</item>
+        <item>no</item>
+
+    </string-array>
+    <string name="predict">Submit</string>
+    <string name="scores">YOUR SCORE IS 10</string>
+    <string name="level">YOUR RISK LEVEL IS HIGH</string>
+
+
+</resources>
