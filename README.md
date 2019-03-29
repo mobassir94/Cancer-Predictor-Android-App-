@@ -73,43 +73,6 @@ The system checks if 3 or more algorithms/classifier returns positive prediction
 
 the Dataset was collected from UCI machine learning repository, i've applied Boruta (Feature selection in R) to get the relevant and Most Important Features for detecting BIOPSY.
 
-# Boruta Feature Selection Result :
-
- Feature Importance Result from Boruta:
-        ##                                    boruta_analysis$finalDecision
-## Age                                                    Tentative
-## Number.of.sexual.partners                              Confirmed
-## First.sexual.intercourse                                Rejected
-## Num.of.pregnancies                                      Rejected
-## Smokes                                                  Rejected
-## Smokes..years.                                         Confirmed
-## Smokes..packs.year.                                    Confirmed
-## Hormonal.Contraceptives                                Confirmed
-## Hormonal.Contraceptives..years.                        Confirmed
-## IUD                                                    Confirmed
-## IUD..years.                                            Confirmed
-## STDs                                                   Tentative
-## STDs..number.                                          Confirmed
-## STDs.condylomatosis                                    Confirmed
-## STDs.cervical.condylomatosis                           Tentative
-## STDs.vaginal.condylomatosis                             Rejected
-## STDs.vulvo.perineal.condylomatosis                     Confirmed
-## STDs.syphilis                                          Confirmed
-## STDs.pelvic.inflammatory.disease                        Rejected
-## STDs.genital.herpes                                     Rejected
-## STDs.molluscum.contagiosum                              Rejected
-## STDs.AIDS                                              Tentative
-## STDs.HIV                                                Rejected
-## STDs.Hepatitis.B                                       Tentative
-## STDs.HPV                                                Rejected
-## STDs..Number.of.diagnosis                              Tentative
-## STDs..Time.since.first.diagnosis                       Confirmed
-## STDs..Time.since.last.diagnosis                        Confirmed
-## Dx.Cancer                                              Confirmed
-## Dx.CIN                                                 Tentative
-## Dx.HPV                                                 Confirmed
-## Dx                                                     Confirmed
-
 then only 1 algorithm used for predicting cervical cancer which is Random Forest, and on a 70-30% training and testing split and using 10 fold cross validation the accuracy of this algorithm on this system was 89.5349 % that means almost 90% time what this system predicts for ‘biopsy’ is correct (based on previous patients symptoms)
 
 
