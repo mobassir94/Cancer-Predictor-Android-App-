@@ -2,7 +2,7 @@
 
 Watch the Demo video of this App here : https://www.youtube.com/watch?v=0evaXWTVDoA
 
-Download the app from here : https://play.google.com/store/apps/details?id=com.datakeen.cancerpredictor
+Download the app from here : https://play.google.com/store/apps/details?id=com.datakeenbd.cancerpredictor&fbclid=IwAR1adDWMdUO4lcfzsALOhLYUwf_6qO2F4E6UfSybTg79qeVVNcvLKowoIRE
 
 Using Weka API This System Is developed for early detecting ovarian cancer and cervical cancer of a patient and to recommend when to approach nearby doctor for treatment, before they completely develop cancer.
 
