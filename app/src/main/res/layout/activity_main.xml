@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_bright"
         android:text="select option below :"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="#90000000"
         android:textColorLink="@android:color/holo_red_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
