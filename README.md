@@ -10,7 +10,7 @@ Using Weka API This System Is developed for early detecting ovarian cancer and c
 
 521 cancerous  and non-cancerous  patients record were collected from different diagnostic centers (in Bangladesh). Then a structured questionnaire was used containing details of ovarian cancer risk factors including age, menopause end age, problem during pregnancy, first sex age, any infection in genital area, affected by ovarian cancer, abortion, pregnancy, BMI, menopause after 50, food habit, obesity, excessive alcohol, late menopause, early menopause, hormone therapy, exercise, previous exposure to other sexually transmitted infections (STIs), marital status, genetic risk, outdoor activities and affected by any cancer before based on the previous studies. After pre-processing, data was clustered using K-means clustering algorithm for identifying relevant and non-relevant data to ovarian cancer. Then relevant data were used to develop this system, there are 6 algorithms applied in the relevant data and on 70-30% training and testing split the performance of the models were evaluated.
 
-# performance of Eatch Algorithm:
+# performance of Each Algorithm:
 
 1. Decision Tree (J48):  accuracy = 80.2548 %
 2. Random Forest:  accuracy = 80.2548 %
